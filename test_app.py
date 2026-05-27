@@ -5,8 +5,8 @@ from app import say_hello
 
 class TestApp(unittest.TestCase):
     def test_say_hello(self):
-        self.assertAlmostEqual(say_hello("AWS"), "Hello, AWS")
+        self.assertEqual(say_hello("AWS"), "Hello, AWS")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
